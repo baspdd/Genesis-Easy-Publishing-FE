@@ -1,0 +1,29 @@
+.footer-container {
+    border-top      : 1px solid #ddd;
+    background-color: var(--footer-background-color);
+    bottom          : 0;
+    text-align      : center;
+    padding         : 15px 0;
+
+    .category {
+        color: #888;
+    }
+
+    .description {
+        font-size: 13px;
+        color    : var(--text-light);
+    }
+}
+
+[data-theme="dark-theme"] {
+    .footer-container {
+
+        .category {
+            cursor: pointer;
+
+            &:hover {
+                color: #fff;
+            }
+        }
+    }
+}

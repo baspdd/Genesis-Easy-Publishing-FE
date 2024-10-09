@@ -1,0 +1,23 @@
+.review-chapter-container {
+    .review-chapter-content {
+        .review-content {
+            @media screen and (min-width: 320px) and (max-width: 575px) {
+                width: 100% !important;
+            }
+        }
+
+        .rate-area {
+            .ant-form {
+                .ant-form-item {
+                    margin-bottom: 0;
+
+                    .reviewContent {
+                        @media screen and (min-width: 320px) and (max-width: 576px) {
+                            width: 75% !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

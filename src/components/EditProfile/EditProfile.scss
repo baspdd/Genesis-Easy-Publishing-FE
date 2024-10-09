@@ -1,0 +1,34 @@
+.edit-profile-container {
+    .edit-profile-content {
+        .avatar {
+            .ant-upload-wrapper {
+                .ant-upload-list {
+                    display       : flex;
+                    flex-direction: column;
+
+                    @media screen and (min-width: 320px) and (max-width: 767px) {
+                        flex-direction: row;
+                    }
+
+                    .ant-upload-list-item-container {
+                        .ant-upload-list-item {
+                            .ant-upload-list-item-actions {
+                                .ant-btn:has(.anticon-delete) {
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+[data-theme="dark-theme"] {
+    .ant-upload {
+        button {
+            color: var(--text-light);
+        }
+    }
+}

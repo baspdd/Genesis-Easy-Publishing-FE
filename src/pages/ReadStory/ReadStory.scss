@@ -1,0 +1,29 @@
+.read-story-container {
+
+    .read-story-content {
+
+        .buttons {
+            &.buttons-margin {
+                margin: 0 230px;
+            }
+
+            &.buttons-remove-margin {
+                margin: 0;
+            }
+        }
+    }
+}
+
+.modal-change-font-size {
+    .ant-modal-content {
+        .ant-modal-body {
+            .ant-input-number-group-wrapper {
+                width: 120px;
+
+                .ant-input-number-group-addon {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}

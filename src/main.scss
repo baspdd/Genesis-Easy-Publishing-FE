@@ -1,0 +1,136 @@
+html,
+body {
+  scrollbar-width: thin;
+  scrollbar-color: unset;
+}
+
+.dark-theme {
+  background-color: #141414;
+}
+
+body {
+  box-sizing: border-box;
+  margin    : 0;
+  padding   : 0;
+  text-align: justify !important;
+
+  p,
+  dd,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  legend {
+    margin : 0;
+    padding: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .ant-typography-ellipsis-multiple-line {
+    margin: 0;
+  }
+
+  .ant-divider {
+    margin: 10px 0;
+  }
+
+  .link-hover {
+    color: unset;
+
+    &:hover {
+      color: #69b1ff;
+    }
+  }
+
+  .time {
+    color: #bba1a1;
+  }
+
+  .pointer {
+    cursor: pointer;
+  }
+
+  .copy-right {
+    color    : #888;
+    font-size: 13px;
+  }
+
+  .icon-like {
+    color: #2679fa;
+
+    &:hover {
+      color       : #2679fa !important;
+      border-color: #2679fa !important;
+    }
+  }
+
+  .icon-follow {
+    color: #ec8e82;
+
+    &:hover {
+      color       : #ec8e82 !important;
+      border-color: #ec8e82 !important;
+    }
+  }
+
+  .no-select {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select  : none;
+    /* Safari */
+    -khtml-user-select   : none;
+    /* Konqueror HTML */
+    -moz-user-select     : none;
+    /* Old versions of Firefox */
+    -ms-user-select      : none;
+    /* Internet Explorer/Edge */
+    user-select          : none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+  }
+
+  .ant-drawer {
+    z-index: 1030;
+  }
+
+  .text-capitalize {
+    text-transform: capitalize;
+  }
+
+  .text-eclipse {
+    white-space  : nowrap;
+    overflow     : hidden;
+    text-overflow: ellipsis;
+  }
+
+  .content-html {
+    word-break: break-word;
+  }
+
+  .text-theme {
+    color: var(--text-light);
+  }
+}
+
+.ant-app {
+  background-color: var(--body-background-color) !important;
+}
+
+:root {
+  --body-background-color  : #fff;
+  --header-background-color: #f4f4f4;
+  --footer-background-color: #f4f4f4;
+  --text-light             : #212529
+}
+
+[data-theme="dark-theme"] {
+  --body-background-color  : #141414;
+  --header-background-color: #343a40;
+  --footer-background-color: #343a40;
+  --text-light             : #fff
+}
